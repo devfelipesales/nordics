@@ -53,27 +53,6 @@ header nav {
   width: 100%;
 }
 
-/* // Dispositivos extra small (telefones em modo retrato, com menos de 576px) */
-@media (max-width: 576px) {
-  .top-header {
-    padding: 8px var(--spacing-20px);
-  }
-
-  /* Quebra o horário de funcionamento em duas linhas no mobile */
-  .top-header span {
-    max-width: 22ch;
-  }
-
-  .header img {
-    max-width: 75px;
-  }
-
-  /* Inverte os lados do menu e da logo */
-  /* .header {
-    flex-direction: row-reverse;
-  } */
-}
-
 /* // Dispositivos small (telefones em modo paisagem, com menos de 768px) */
 @media (max-width: 768px) {
   #menu li {
@@ -89,10 +68,18 @@ header nav {
   }
 }
 
-/* // Dispositivos médios (tablets com menos de 992px) */
-@media (max-width: 991.98px) {
-}
+/* // Dispositivos extra small (telefones em modo retrato, com menos de 576px) */
+@media (max-width: 576px) {
+  .top-header {
+    padding: 8px var(--spacing-20px);
+  }
 
-/* // Dispositivos large (desktops com menos de 1200px) */
-@media (max-width: 1199.98px) {
+  /* Quebra o horário de funcionamento em duas linhas no mobile */
+  .top-header span {
+    max-width: 22ch;
+  }
+
+  .header img {
+    max-width: 75px;
+  }
 }
