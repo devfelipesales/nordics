@@ -8,5 +8,8 @@
 /* Home */
 @import url(./home/introducao.css);
 
+/* Serviços */
+@import url(./home/servicos.css);
+
 /* JS */
 @import url(menu-mobile.css);
