@@ -37,6 +37,31 @@ img {
   display: block;
 }
 
+.secao-titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.secao-titulo img {
+  position: absolute;
+  bottom: -2rem;
+}
+
+@media (max-width: 576px) {
+  .secao-titulo img {
+    width: 140px;
+  }
+}
+
+@media (max-width: 360px) {
+  .secao-titulo img {
+    width: 120px;
+    bottom: -20px;
+  }
+}
+
 @keyframes show-right {
   from {
     opacity: 0;

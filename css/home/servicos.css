@@ -2,27 +2,12 @@
   padding-top: var(--spacing-80px);
 }
 
-.servicos-titulo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-/* 
-.servicos h2 {
-  text-align: center;
-} */
-
-.servicos-titulo img {
-  position: absolute;
-  bottom: -2rem;
-}
-
 .servicos-box {
   margin-top: var(--spacing-72px);
   display: flex;
   overflow-x: auto;
   gap: var(--spacing-32px);
+  padding: 0.5rem;
 }
 
 .servicos-box li {
@@ -81,16 +66,5 @@
 
   .servico-info img {
     width: 48px;
-  }
-
-  .servicos-titulo img {
-    width: 140px;
-  }
-}
-
-@media (max-width: 360px) {
-  .servicos-titulo img {
-    width: 120px;
-    bottom: -20px;
   }
 }
