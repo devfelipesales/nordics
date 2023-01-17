@@ -7,9 +7,9 @@
 
 /* Home */
 @import url(./home/introducao.css);
-
-/* Serviços */
 @import url(./home/servicos.css);
+@import url(./home/galeria.css);
 
 /* JS */
 @import url(menu-mobile.css);
+@import url(slide.css);

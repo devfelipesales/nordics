@@ -1,0 +1,13 @@
+.galeria-titulo {
+  padding-top: var(--spacing-80px);
+}
+
+.galeria {
+  padding-top: var(--spacing-80px);
+}
+
+@media (max-width: 576px) {
+  .galeria {
+    padding-top: var(--spacing-60px);
+  }
+}
