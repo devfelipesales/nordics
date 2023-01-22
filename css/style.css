@@ -10,6 +10,9 @@
 @import url(./home/servicos.css);
 @import url(./home/galeria.css);
 
+/* Clube */
+@import url(./clube/clube.css);
+
 /* JS */
 @import url(menu-mobile.css);
 @import url(slide.css);

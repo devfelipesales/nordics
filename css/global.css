@@ -49,6 +49,10 @@ img {
   bottom: -2rem;
 }
 
+.secao-titulo h2 {
+  text-align: center;
+}
+
 @media (max-width: 576px) {
   .secao-titulo img {
     width: 140px;
@@ -58,7 +62,7 @@ img {
 @media (max-width: 360px) {
   .secao-titulo img {
     width: 120px;
-    bottom: -20px;
+    bottom: -1.5rem;
   }
 }
 
