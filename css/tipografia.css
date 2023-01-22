@@ -24,7 +24,7 @@
 
 /* 32/40 - Semibold */
 .font-1-l-b {
-  font: 600 2rem/2.5rem 'Poppins', sans-serif;
+  font: 600 2rem 'Poppins', sans-serif;
 }
 
 /* 32/40 - Medium*/
@@ -90,15 +90,21 @@
   font: 400 1rem/1.5rem 'Poppins', sans-serif;
 }
 
-/* 12/16 - Regular */
+/* 14/16 - Regular */
 .font-1-xxs {
-  font: 400 0.75rem/1rem 'Poppins', sans-serif;
+  font: 400 0.875rem/1rem 'Poppins', sans-serif;
 }
 
 /* Breakpoints for fonts */
 
 /* // Dispositivos large (desktops com menos de 1200px) */
 @media (max-width: 1200px) {
+  /* 28px */
+  .font-1-l,
+  .font-1-l-b {
+    font-size: 1.75rem;
+  }
+
   /* 18px */
   .font-1-m,
   .font-1-m-b,
@@ -129,6 +135,30 @@
   }
 }
 
+@media (max-width: 420px) {
+  .font-2-xxl {
+    font-size: 3.2rem;
+  }
+
+  .font-1-xs-c,
+  .font-1-xs-b,
+  .font-1-xs {
+    font-size: 0.875rem;
+  }
+
+  .font-1-m,
+  .font-1-m-b,
+  .font-1-m-c {
+    font-size: 1rem;
+  }
+
+  /* 16px */
+  .font-1-s-c,
+  .font-1-s-b,
+  .font-1-s {
+    font-size: 1rem;
+  }
+}
 @media (max-width: 360px) {
   /* 16px */
   .font-1-m,

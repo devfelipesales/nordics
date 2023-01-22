@@ -40,6 +40,14 @@
   color: #fff;
 }
 
+.color-s1 {
+  color: #a67d3d;
+}
+
+.color-s2 {
+  color: #595959;
+}
+
 .color-p1 {
   color: var(--primary-color-p1);
 }
@@ -135,21 +143,11 @@
   box-sizing: border-box;
   margin: 0 auto;
   padding: var(--spacing-20px);
-  /* padding: var(--spacing-28px) var(--spacing-20px); */
 }
 
-/* @media (max-width: 480px) {
-  .container {
-    padding: var(--spacing-20px) var(--spacing-10px);
+@media (max-width: 992px) {
+  .style-btn,
+  .style-btn-2 {
+    padding: 0.75rem 1.5rem;
   }
-} */
-/* End Containers */
-
-/* Fonts */
-
-/* .font-2-l-b {
-  font: 500 1.5rem/1.5 'Roboto', sans-serif;
-  letter-spacing: 0.015em;
-  text-transform: uppercase;
-  color: var(--secondary-color-c5);
-} */
+}
