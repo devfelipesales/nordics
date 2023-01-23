@@ -5,6 +5,9 @@
 /* Header */
 @import url(header.css);
 
+/* Footer */
+@import url(footer.css);
+
 /* Home */
 @import url(./home/introducao.css);
 @import url(./home/servicos.css);

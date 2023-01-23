@@ -1,5 +1,6 @@
 .clube {
   padding-top: var(--spacing-80px);
+  padding-bottom: var(--spacing-80px);
 }
 
 .clube-planos {
