@@ -66,6 +66,40 @@ li.opc-light {
   place-self: flex-start;
 }
 
+.clube-texto {
+  display: flex;
+  justify-content: center;
+
+  gap: 12px;
+  margin-top: var(--spacing-40px);
+}
+
+.clube-texto span {
+  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.clube-texto span:hover {
+  /* color: #caa572; */
+  color: var(--primary-color-p3);
+}
+
+.clube-texto p {
+  max-width: 40ch;
+  text-align: center;
+}
+
+/* .clube-texto p::before {
+  position: absolute;
+  left: -20px;
+  top: 16px;
+  content: '';
+  width: 12px;
+  height: 8px;
+  background-color: #ffbb00;
+} */
+
 @media (max-width: 992px) {
   .clube-planos {
     grid-template-columns: 1fr;
@@ -78,5 +112,6 @@ li.opc-light {
 @media (max-width: 576px) {
   .clube {
     padding-top: var(--spacing-60px);
+    padding-bottom: var(--spacing-60px);
   }
 }
