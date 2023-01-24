@@ -34,11 +34,11 @@ header nav {
 
 .menu li a {
   color: var(--color-white);
-  padding: 16px 0px;
+  padding: 1rem 0px;
   position: relative;
 }
 
-.menu li a::after {
+.menu li:not(:last-child) a::after {
   content: '';
   display: block;
   width: 0px;
@@ -49,8 +49,20 @@ header nav {
   transition: 0.3s;
 }
 
-.menu li a:hover::after {
+.menu li a:hover:after {
   width: 100%;
+}
+
+.menu li:last-child a {
+  color: #fabb24;
+  padding: 6px 18px;
+  border: 3px solid #fabb24;
+  border-radius: 8px;
+}
+
+.menu li:last-child a:hover {
+  color: #fff;
+  border-color: #fff;
 }
 
 /* // Dispositivos small (telefones em modo paisagem, com menos de 768px) */
@@ -63,8 +75,15 @@ header nav {
     width: 0px;
   }
 
-  .menu li a:hover {
+  .menu li a:hover,
+  .menu li:last-child a:hover {
     color: var(--secondary-color-c2);
+  }
+
+  .menu li:last-child a {
+    border: none;
+    color: var(--color-white);
+    padding: 1rem 0px;
   }
 }
 

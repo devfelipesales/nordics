@@ -48,6 +48,10 @@
   color: #595959;
 }
 
+.color-s3 {
+  color: #111111;
+}
+
 .color-p1 {
   color: var(--primary-color-p1);
 }

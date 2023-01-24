@@ -35,11 +35,17 @@
   transform: scale(1);
 }
 
-.custom-controls {
+/* .custom-controls {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   grid-column: 1 / -1;
+} */
+
+.custom-controls {
+  display: grid;
+  grid-template-columns: repeat(6, 60px);
+  justify-content: center;
 }
 
 .custom-controls li {
@@ -58,4 +64,11 @@
 .custom-controls li.active {
   opacity: 1;
   transform: scale(1);
+}
+
+@media (max-width: 380px) {
+  .custom-controls {
+    grid-template-columns: repeat(3, 60px);
+    gap: 16px;
+  }
 }
