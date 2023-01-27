@@ -66,19 +66,6 @@ img {
   }
 }
 
-/* CSS PARA ANIMA SCROLL */
-
-.js-scroll {
-  opacity: 0;
-  transform: translate3d(-30px, 0, 0);
-  transition: 0.4s;
-}
-
-.js-scroll.ativo {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-}
-
 /* CSS DO PLUGIN DATA-ANIME 
 
  CSS personalizado dependendo da animação desejada
