@@ -81,7 +81,6 @@ li.opc-light {
 }
 
 .clube-texto span:hover {
-  /* color: #caa572; */
   color: var(--primary-color-p3);
 }
 
@@ -89,16 +88,6 @@ li.opc-light {
   max-width: 40ch;
   text-align: center;
 }
-
-/* .clube-texto p::before {
-  position: absolute;
-  left: -20px;
-  top: 16px;
-  content: '';
-  width: 12px;
-  height: 8px;
-  background-color: #ffbb00;
-} */
 
 @media (max-width: 992px) {
   .clube-planos {

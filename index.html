@@ -5,16 +5,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
+  <script type="text/javascript" src="js/plugins/simple-anime.js" defer></script>
+  <script type="module" src="js/script.js" defer></script>
   <title>Nordic's Barbearia</title>
 </head>
 
 <body>
-  <section class="bg-color-p3">
+  <section id="top" class="bg-color-p3">
     <div class="container top-header">
       <img src="./img/icones/barbear-top.png" alt="" width="40" height="40">
-
       <span class="font-1-xs-b color-white">Terça a Sábado: 9h as 20h; Domingo: 9h as 12h</span>
+
     </div>
   </section>
   <header class="bg-color-p4">
@@ -38,11 +41,11 @@
           <source media="(max-width: 576px)" srcset="./img/icones/detalhe-tesoura-p.png" width="28" height="35">
           <img src="./img/icones/detalhe-tesoura-g.png" alt="" width="33" height="40">
         </picture>
-        <h1 class="font-1-xxl color-white" data-anime="300">Serviços<br> profissionais de<br> corte de cabelo e <br> barba para homens<span class="color-c2">.<span></h1>
+        <h1 class="font-1-xxl color-white" data-anime="400">Serviços<br> profissionais de<br> corte de cabelo e <br> barba para homens<span class="color-c2">.<span></h1>
         <p class="font-1-m color-white" data-anime="500">Encontre os melhores serviços de barbearia do janga.</p>
-        <p class="font-1-m color-white" data-anime="500"> Verifique nossos preços e adquira nossa assinatura no <wbr><a href="./clube.html"><strong class="color-c2 underline"> clube vikings.</strong></a></p>
+        <p class="font-1-m color-white" data-anime="600"> Verifique nossos preços e adquira nossa assinatura no <wbr><a href="./clube.html"><strong class="color-c2 underline"> clube vikings.</strong></a></p>
       </div>
-      <picture class="introducao-img-principal">
+      <picture class="introducao-img-principal" data-anime="800">
         <source media="(max-width: 1024px)" srcset="./img/principal/principal-sm.png">
         <source media="(max-width: 1200px)" srcset="./img/principal/principal-m.png">
         <img src="./img/principal/principal-g.png" alt="Barbearia" width="500" height="704">
@@ -50,7 +53,7 @@
     </div>
   </section>
   <main>
-    <section class="bg-color-p1">
+    <section class="bg-color-p1 js-scroll">
       <div class="servicos container">
         <div class="secao-titulo">
           <h2 class="font-2-xxl color-p4">Serviços</h2>
@@ -126,7 +129,7 @@
       </div>
       </div>
     </section>
-    <section class="bg-color-p4">
+    <section class="bg-color-p4 js-scroll">
       <div class="">
         <div class="galeria-titulo secao-titulo">
           <h2 class="font-2-xxl color-p2">Galeria</h2>
@@ -154,14 +157,14 @@
         </div>
       </div>
     </section>
-    <article class="bg-color-p1" aria-label="Clube Vikings">
+    <article class="bg-color-p1 js-scroll" aria-label="Clube Vikings">
       <div class="clube container">
         <div class="secao-titulo">
           <h2 class="font-2-xxl color-p4">Clube Vikings</h2>
           <img src="./img/icones/detalhe-bigode.svg" alt="" width="150" height="50">
         </div>
         <div class="clube-planos">
-          <div class="clube-planos-info fadeInLeft" data-anime="300">
+          <div class="clube-planos-info">
             <div class="color-p4">
               <div class="clube-planos-info-detalhes">
                 <h3 class="nome-plano font-1-l-b color-s2">PRATA</h3>
@@ -174,13 +177,13 @@
             </div>
             <ul class="font-1-xs-b color-p3">
               <li><img src="./img/icones/v-light.svg">Corte Ilimitado</li>
-              <li><img src="./img/icones/v-light.svg">10% de desconto em serviços</li>
+              <li class="opc-light"><img src="./img/icones/x.svg">10% de desconto em serviços</li>
               <li class="opc-light"><img src="./img/icones/x.svg">Barba Ilimitada</li>
               <li class="opc-light"><img src="./img/icones/x.svg">10% de desconto em produtos</li>
             </ul>
             <a href="https://app.galaxpay.com.br/planonordics/principal/assinar/plano-prata-cabelo/1" class="style-btn-2 font-1-s-c">Inscreva-se</a>
           </div>
-          <div class="clube-planos-info ilimitado fadeInLeft" data-anime="300">
+          <div class="clube-planos-info ilimitado">
             <div class="color-p4">
               <div class="clube-planos-info-detalhes">
                 <h3 class="nome-plano font-1-l-b color-c2">OURO</h3>
@@ -196,12 +199,11 @@
               <li><img src="./img/icones/v-light.svg">Barba Ilimitada</li>
               <li><img src="./img/icones/v-light.svg">10% de desconto em serviços com química(platinado, luzes, etc)</li>
               <li><img src="./img/icones/v-light.svg">10% de desconto em produtos</li>
-              <li><img src="./img/icones/v-light.svg">Serviços com hora agendada</li>
               <li><img src="./img/icones/v-light.svg">Participação em sorteios</li>
             </ul>
             <a href="https://app.galaxpay.com.br/planonordics/principal/assinar/plano-ouro-cabelo-barba/3" class="style-btn font-1-s-c">Inscreva-se</a>
           </div>
-          <div class="clube-planos-info fadeInLeft" data-anime="300">
+          <div class="clube-planos-info">
             <div class="color-p4">
               <div class="clube-planos-info-detalhes">
                 <h3 class="nome-plano font-1-l-b color-s1">BRONZE</h3>
@@ -214,7 +216,7 @@
             </div>
             <ul class="font-1-xs-b color-p3">
               <li><img src="./img/icones/v-light.svg">Barba Ilimitada</li>
-              <li><img src="./img/icones/v-light.svg">10% de desconto em serviços</li>
+              <li class="opc-light"><img src="./img/icones/x.svg">10% de desconto em serviços</li>
               <li class="opc-light"><img src="./img/icones/x.svg">Corte Ilimitado</li>
               <li class="opc-light"><img src="./img/icones/x.svg">10% de desconto em produtos</li>
             </ul>
@@ -229,15 +231,16 @@
 
     </article>
   </main>
-  <footer class="bg-color-p4">
+  <footer class="bg-color-p4 js-scroll">
     <div class="footer container">
-      <img src="img/principal/Logo-p.png" alt="Logo" width="75" height="100">
+      <a href="#top"><img src="img/principal/Logo.png" alt="Logo" width="90" height="120"></a>
       <div class="footer-contato">
         <h3 class="font-1-m2-b color-white">CONTATO</h3>
         <div class="footer-contato-info">
           <div class="footer-contato-info-detalhes color-p1 font-1-s">
-            <a href="tel:+5581985438005">+55 81 98543-8005</a>
-            <a href="mailto:contato@nordicsbarbearia.com">contato@nordicsbarbearia.com</a>
+            <div><img src="./img/icones/telefone-w.svg" alt=""><a href="tel:+5581985438005">+55 81 98543-8005</a></div>
+            <div><img src="./img/icones/email-w.svg" alt=""><a href="mailto:contato@nordicsbarbearia.com">contato@nordicsbarbearia.com</a></div>
+
           </div>
           <div class="footer-contato-info-detalhes color-p1 font-1-s">
             <span>Rua José Francisco de Santana,</span>
@@ -257,10 +260,11 @@
       <div class="redes-principal">
         <div class="footer-contato-redes">
           <a href="https://www.instagram.com/nordicsbarbearia/" target="_blank"><img src="./img/redes/instagram.svg" alt="instagram"></a>
-          <a href="https://wa.me/+5581985438005" target="_blank"><img src="./img/redes/facebook.svg" alt="facebook"></a>
+          <a href="https://wa.me/+5581985438005" target="_blank"><img src="./img/redes/whatsapp-w.svg" alt="whatsapp"></a>
           <a href="/"><img src="./img/redes/youtube.svg" alt="youtube"></a>
         </div>
         <div class="footer-funcionamento font-1-xs-b color-white">
+
           <span>Terça a Sábado: 9h as 20h</span>
           <span>Domingo: 9h as 12h</span>
         </div>
@@ -272,7 +276,7 @@
   </footer>
 
 
-  <script type="module" src="js/script.js"></script>
+
 </body>
 
 </html>

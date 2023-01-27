@@ -31,6 +31,11 @@
   bottom: -16px;
 }
 
+.footer-contato-info-detalhes div {
+  display: flex;
+  gap: 8px;
+}
+
 .footer-contato-redes {
   display: flex;
   flex-wrap: wrap;
@@ -65,7 +70,6 @@
 
 .footer-funcionamento span {
   display: block;
-  font-weight: 400;
 }
 
 .footer-funcionamento span + span {
@@ -97,7 +101,7 @@
 }
 
 @media (max-width: 1024px) {
-  .footer > img {
+  .footer > a {
     display: none;
   }
 
@@ -134,8 +138,12 @@
     padding-top: var(--spacing-40px);
   }
 
-  .footer > img {
+  .footer > a {
     display: block;
+  }
+
+  .footer > a img {
+    max-width: 75px;
   }
 }
 
