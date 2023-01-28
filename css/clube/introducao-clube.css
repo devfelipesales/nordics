@@ -1,0 +1,38 @@
+.introducao-clube {
+  display: flex;
+  flex-direction: column;
+  padding-top: var(--spacing-32px);
+  padding-bottom: var(--spacing-32px);
+  gap: var(--spacing-4px);
+}
+
+.introducao-clube div {
+  display: flex;
+  gap: var(--spacing-8px);
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .introducao-clube img {
+    max-width: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .introducao-clube {
+    padding-top: var(--spacing-20px);
+    padding-bottom: var(--spacing-20px);
+  }
+}
+
+@media (max-width: 480px) {
+  #titulo-clube {
+    font-size: 2.785rem;
+  }
+}
+
+@media (max-width: 385px) {
+  #titulo-clube {
+    font-size: 2.6rem;
+  }
+}
