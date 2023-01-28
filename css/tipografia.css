@@ -42,6 +42,12 @@
   font: 400 1.5rem/2rem 'Poppins', sans-serif;
 }
 
+/* 20/28 - regular */
+.font-1-m-d {
+  font: 400 1.25rem/1.75rem 'Poppins', sans-serif;
+  letter-spacing: 0.015em;
+}
+
 /* 20/28 - Semibold */
 .font-1-m-c {
   font: 600 1.25rem/1.75rem 'Poppins', sans-serif;
@@ -55,6 +61,11 @@
 /* 20/28 - Regular */
 .font-1-m {
   font: 400 1.25rem/1.75rem 'Poppins', sans-serif;
+}
+
+/* 18/24 - Medium */
+.font-1-s-d {
+  font: 600 1.125rem/1.35 'Poppins', sans-serif;
 }
 
 /* 18/24 - Semibold */
@@ -108,7 +119,8 @@
   /* 18px */
   .font-1-m,
   .font-1-m-b,
-  .font-1-m-c {
+  .font-1-m-c,
+  .font-1-m-d {
     font-size: 1.125rem;
   }
 }
@@ -140,6 +152,14 @@
     font-size: 1.5rem;
     line-height: 2.2rem;
   }
+
+  .font-1-s-d {
+    font-size: 1.05rem;
+  }
+
+  .font-1-xs {
+    font-size: 0.9rem;
+  }
 }
 
 /* // Dispositivos extra small (telefones em modo retrato, com menos de 576px) */
@@ -147,6 +167,18 @@
   .font-2-xxl {
     font-size: 3.5rem;
     line-height: 4rem;
+  }
+
+  .font-1-m2 {
+    font-size: 1rem;
+  }
+
+  .font-1-m-d {
+    font-size: 1rem;
+  }
+
+  .font-1-s-d {
+    font-size: 1rem;
   }
 }
 

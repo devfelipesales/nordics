@@ -141,12 +141,15 @@ export class Slide {
   }
 
   init() {
-    this.bindEvents();
-    this.transition(true);
-    this.addSlideEvents();
-    this.slidesConfig();
-    this.addResizeEvent();
-    this.changeSlide(0);
+    if (this.slide && this.wrapper) {
+      this.bindEvents();
+      this.transition(true);
+      this.addSlideEvents();
+      this.slidesConfig();
+      this.addResizeEvent();
+      this.changeSlide(0);
+    }
+
     return this;
   }
 }
@@ -154,54 +157,70 @@ export class Slide {
 export default class SlideNav extends Slide {
   constructor(slide, wrapper) {
     super(slide, wrapper);
-    this.bindControlEvents();
+    if (this.slide && this.wrapper) {
+      this.bindControlEvents();
+    }
   }
 
   addArrow(prev, next) {
     this.prevElement = document.querySelector(prev);
     this.nextElement = document.querySelector(next);
-    this.addArrowEvent();
+    if (this.prevElement && this.nextElement) {
+      this.addArrowEvent();
+    }
   }
 
   addArrowEvent() {
-    this.prevElement.addEventListener('click', this.activePrevSlide);
-    this.nextElement.addEventListener('click', this.activeNextSlide);
+    if (this.prevElement && this.nextElement) {
+      this.prevElement.addEventListener('click', this.activePrevSlide);
+      this.nextElement.addEventListener('click', this.activeNextSlide);
+    }
   }
 
   createControl() {
-    const control = document.createElement('ul');
-    control.dataset.control = 'slide';
-    this.slideArray.forEach((item, index) => {
-      control.innerHTML += `<li><a href="#slide${index + 1}">${
-        index + 1
-      }</a></li>`;
-    });
-    this.wrapper.appendChild(control);
-    return control;
+    if (this.wrapper) {
+      const control = document.createElement('ul');
+      control.dataset.control = 'slide';
+      this.slideArray.forEach((item, index) => {
+        control.innerHTML += `<li><a href="#slide${index + 1}">${
+          index + 1
+        }</a></li>`;
+      });
+      this.wrapper.appendChild(control);
+      return control;
+    }
   }
 
   eventControl(item, index) {
-    item.addEventListener('click', (event) => {
-      event.preventDefault();
-      this.changeSlide(index);
-    });
-    this.wrapper.addEventListener('changeEvent', this.activeControlItem);
+    if (this.wrapper) {
+      item.addEventListener('click', (event) => {
+        event.preventDefault();
+        this.changeSlide(index);
+      });
+      this.wrapper.addEventListener('changeEvent', this.activeControlItem);
+    }
   }
 
   activeControlItem() {
-    this.controlArray.forEach((item) =>
-      item.classList.remove(this.activeClass)
-    );
-    this.controlArray[this.index.active].classList.add(this.activeClass);
+    if (this.slide && this.wrapper) {
+      this.controlArray.forEach((item) =>
+        item.classList.remove(this.activeClass)
+      );
+      this.controlArray[this.index.active].classList.add(this.activeClass);
+    }
   }
 
   addControl(customControl) {
-    this.control =
-      document.querySelector(customControl) || this.createControl();
-    this.controlArray = [...this.control.children];
+    if (this.slide && this.wrapper) {
+      this.control =
+        document.querySelector(customControl) || this.createControl();
+      if (this.control) {
+        this.controlArray = [...this.control.children];
+      }
 
-    this.activeControlItem();
-    this.controlArray.forEach(this.eventControl);
+      this.activeControlItem();
+      this.controlArray.forEach(this.eventControl);
+    }
   }
 
   bindControlEvents() {
