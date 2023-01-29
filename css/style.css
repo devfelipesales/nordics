@@ -2,6 +2,10 @@
 @import url(utilitario.css);
 @import url(tipografia.css);
 
+/* JS */
+@import url(menu-mobile.css);
+@import url(slide.css);
+
 /* Header */
 @import url(header.css);
 
@@ -18,6 +22,5 @@
 @import url(./clube/clube.css);
 @import url(./clube/perguntas.css);
 
-/* JS */
-@import url(menu-mobile.css);
-@import url(slide.css);
+/* Contato */
+@import url(./contato/contato.css);

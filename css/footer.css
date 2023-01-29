@@ -9,6 +9,7 @@
 .footer {
   grid-template-columns: 0.5fr 1fr 1fr 1fr;
   padding-top: var(--spacing-60px);
+  padding-bottom: var(--spacing-60px);
   gap: var(--spacing-40px);
 }
 
@@ -136,6 +137,7 @@
   .footer {
     grid-template-columns: 1fr;
     padding-top: var(--spacing-40px);
+    padding-bottom: var(--spacing-40px);
   }
 
   .footer > a {

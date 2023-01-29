@@ -1,0 +1,151 @@
+.introducao-contato {
+  display: flex;
+  flex-direction: column;
+  padding-top: var(--spacing-32px);
+  padding-bottom: var(--spacing-32px);
+}
+
+.introducao-contato div {
+  display: flex;
+  gap: var(--spacing-8px);
+  align-items: center;
+}
+
+.contato {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  max-width: 840px;
+  padding-top: var(--spacing-60px);
+  padding-bottom: var(--spacing-60px);
+}
+
+.contato-box {
+  padding: var(--spacing-40px);
+}
+
+.contato-cidade {
+  display: flex;
+  gap: 12px;
+  padding-bottom: var(--spacing-40px);
+}
+
+.contato-detalhe {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.contato-info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 8px;
+  align-items: center;
+  place-content: start;
+}
+
+.contato-info p {
+  grid-column: 2;
+}
+
+.contato-redes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-40px);
+}
+
+.contato-redes img {
+  transition: 0.3s;
+}
+
+.contato-email:hover,
+.contato-fone:hover {
+  color: #caa572;
+}
+
+.contato-horario,
+.contato-redes {
+  padding-top: var(--spacing-20px);
+}
+
+@media (min-width: 1200px) {
+  .contato-redes img:hover {
+    width: 36px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .introducao-contato img {
+    max-width: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .introducao-contato {
+    padding-top: var(--spacing-20px);
+    padding-bottom: var(--spacing-20px);
+  }
+
+  .contato-detalhe {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .contato-horario,
+  .contato-redes {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .contato {
+    padding-top: var(--spacing-32px);
+    padding-bottom: var(--spacing-32px);
+  }
+}
+
+@media (max-width: 480px) {
+  #titulo-contato {
+    font-size: 2.785rem;
+  }
+
+  .contato-redes {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .contato-info img {
+    width: 1rem;
+  }
+
+  .contato-redes img {
+    width: 24px;
+  }
+
+  .contato-cidade img {
+    width: 14px;
+  }
+
+  .contato-box {
+    padding: var(--spacing-20px);
+  }
+}
+
+@media (max-width: 385px) {
+  #titulo-clube {
+    font-size: 2.6rem;
+  }
+}
+
+.img-contato {
+  position: relative;
+}
+
+.img-contato a {
+  position: absolute;
+  bottom: 0.75rem;
+  left: 0.75rem;
+}

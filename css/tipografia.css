@@ -64,6 +64,11 @@
 }
 
 /* 18/24 - Medium */
+.font-1-s-d-2 {
+  font: 600 1.125rem/1.35 'Poppins', sans-serif;
+}
+
+/* 18/24 - Medium */
 .font-1-s-d {
   font: 600 1.125rem/1.35 'Poppins', sans-serif;
 }
@@ -153,7 +158,8 @@
     line-height: 2.2rem;
   }
 
-  .font-1-s-d {
+  .font-1-s-d,
+  .font-1-s-d-2 {
     font-size: 1.05rem;
   }
 
@@ -177,8 +183,14 @@
     font-size: 1rem;
   }
 
-  .font-1-s-d {
+  .font-1-s-d,
+  .font-1-s-d-2 {
     font-size: 1rem;
+  }
+
+  .font-1-s,
+  .font-1-s-b {
+    font-size: 0.95rem;
   }
 }
 
@@ -186,6 +198,14 @@
   .font-1-l {
     font-size: 1.375rem;
     line-height: 2rem;
+  }
+
+  .font-1-s-d-2 {
+    font-size: 0.875rem;
+  }
+
+  .style-btn-3 {
+    padding: 0.5rem 1rem;
   }
 }
 
@@ -198,6 +218,11 @@
   .font-1-m-b,
   .font-1-m-c {
     font-size: 1rem;
+  }
+
+  .font-1-s,
+  .font-1-s-b {
+    font-size: 0.9rem;
   }
 }
 
