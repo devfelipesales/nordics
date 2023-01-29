@@ -1,0 +1,16 @@
+.lista-termos {
+  padding-top: var(--spacing-60px);
+  padding-bottom: var(--spacing-60px);
+}
+
+.lista-termos > li + li {
+  margin-top: var(--spacing-40px);
+}
+
+.lista-termos-info > li {
+  margin-top: 1rem;
+}
+
+.lista-termos-info p {
+  max-width: 85ch;
+}

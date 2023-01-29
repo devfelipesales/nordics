@@ -24,3 +24,7 @@
 
 /* Contato */
 @import url(./contato/contato.css);
+
+/* Termos e condições */
+
+@import url(./termos/termos.css);
